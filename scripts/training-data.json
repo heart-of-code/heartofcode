@@ -1,0 +1,158 @@
+[
+    {
+        "classification": "none",
+        "values": [
+            "no",
+            "none",
+            "nope",
+            "asdf"
+        ],
+        "responses": {
+            "default": [
+                "I'm sorry, I don't understand."
+            ]
+        }
+    },
+    {
+        "classification": "yes",
+        "values": [
+            "yes",
+            "I have a question"
+        ],
+        "responses": {
+            "default": [
+                "Go on then",
+                "And it is?",
+                "'Yes' is not a question"
+            ]
+        }
+    },
+    {
+        "classification": "help",
+        "values": [
+            "what can you tell me about",
+            "what do you know",
+            "help"
+        ],
+        "responses": {
+            "default": [
+                "I can tell you about my hobbies, music choices, and favorite foods!"
+            ]
+        }
+    },
+    {
+        "classification": "hobby",
+        "values": [
+            "do you have any hobbies",
+            "what are your hobbies",
+            "what do you do for fun?",
+            "how do you relax?"
+        ],
+        "responses": {
+            "default": [
+                "I play Dungeons and Dragons and go to the Toronto International Film Festival most years.",
+                "I work on websites, such as this one!"
+            ]
+        }
+    },
+    {
+        "classification": "name",
+        "values": [
+            "what is your name",
+            "do you have a name",
+            "what do you go by",
+            "how should I address you"
+        ],
+        "responses": {
+            "negative": [
+                "Pushy much? My name is Matt."
+            ],
+            "default": [
+                "My name is Matt.",
+                "I'm Matt!",
+                "I go by Matt."
+            ],
+            "positive": [
+                "Lovely to meet you, my name is Matt!",
+                "My name is Matt! Wonderful to meet you."
+            ]
+        }
+    },
+    {
+        "classification": "music-song",
+        "values": [
+            "what music do you listen to",
+            "what are your favorite songs",
+            "what is your favorite song"
+        ],
+        "responses": {
+            "default": [
+                "I don't have a favorite song, but my favorite artists are probably Izzy Bizu, MS MR, Hayley Kiyoko, and Of Monsters and Men!"
+            ]
+        }
+    },
+    {
+        "classification": "music-artist",
+        "values": [
+            "who are your favorite musicians",
+            "who are your favorite artists"
+        ],
+        "responses": {
+            "default": [
+                "My current favorites are Izzy Bizy, MS MR, Hayley Kiyoko, and Of Monsters and Men!"
+            ]
+        }
+    },
+    {
+        "classification": "music-origin",
+        "values": [
+            "what bands did you grow up listening to",
+            "what music did you listen to as a kid"
+        ],
+        "responses": {
+            "default": [
+                "I grew up listening to Weird Al and Paramore.",
+                "The first CD I owned was a Weird Al album."
+            ]
+        }
+    },
+    {
+        "classification": "food",
+        "values": [
+            "what do you like to eat",
+            "what are your favorite foods",
+            "do you have dietary restrictions"
+        ],
+        "responses": {
+            "default": [
+                "I'm a pescetarian, so I tend to prefer dishes like poke and sushi."
+            ]
+        }
+    },
+    {
+        "classification": "food-pescetarian",
+        "values": [
+            "what is a pescetarian",
+            "pescetarian?"
+        ],
+        "responses": {
+            "default": [
+                "Vegetarian + fish.",
+                "It means I'm mostly vegetarian, but make an exception for fish.",
+                "It means I avoid red meat, like hamburgers, but don't mind fish."
+            ]
+        }
+    },
+    {
+        "classification": "books-favorite",
+        "values": [
+            "what are your favorite books",
+            "do you have a favorite book"
+        ],
+        "responses": {
+            "default": [
+                "I don't have a favorite, but I'm greatly enjoying Brandon Sanderson's cosmere."
+            ]
+        }
+    }
+]
