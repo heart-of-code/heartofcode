@@ -38,8 +38,8 @@ const Portfolio = () => (
             <WorkItem><SpectrumTVHeader to={'/work/spectrumtv'} /></WorkItem>
             <WorkItem><ConnektHeader to={'/work/connekt'} /></WorkItem>
             <WorkItem><PMCHeader to={'/work/polymorph-crafts'} /></WorkItem>
-            <WorkItem><RomanticHeader to={'/work/romantic-era-lyrics'} /></WorkItem>
             <WorkItem><HalowheelmenHeader to={'/work/halowheelmen'} /></WorkItem>
+            <WorkItem><RomanticHeader to={'/work/romantic-era-lyrics'} /></WorkItem>
         </WorkList>
 
     </>
