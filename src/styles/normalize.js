@@ -1,4 +1,11 @@
 
+/**
+ * normalize.js
+ * 
+ * These styles provide better cross-browser consistency in 
+ * the default styling of the website.
+ */
+
 import { css } from 'styled-components'
 
 export const Normalize = css`

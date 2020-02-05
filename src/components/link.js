@@ -1,6 +1,12 @@
 
+/**
+ * link.js
+ * 
+ * Routes internal links to gatsby-link and external links to a standard <a> element.
+ */
+
 import React from 'react'
-import InternalLink from 'gatsby-link'
+import { Link as InternalLink } from 'gatsby'
 
 export const Link = React.forwardRef((props, forwardRef) => {
 

@@ -1,9 +1,12 @@
 
-// external
+/**
+ * Global.js
+ * 
+ * This file defines all of the styles that are applied to the dom-wrapper,
+ * which persists through page changes.
+ */
 
 import { createGlobalStyle } from "styled-components";
-
-// internal
 
 import { Normalize } from './normalize';
 import { Body, H1, H2, H3, H4, H5, H6 } from './typography'

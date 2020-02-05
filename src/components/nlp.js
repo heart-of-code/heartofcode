@@ -1,4 +1,10 @@
 
+/**
+ * nlp.js
+ * 
+ * Processes the natural language input.
+ */
+
 import natural from 'natural'
 import sentiment from 'sentiment'
 

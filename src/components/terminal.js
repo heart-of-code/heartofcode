@@ -1,4 +1,10 @@
 
+/**
+ * terminal.js
+ * 
+ * Simulates a command-line console.
+ */
+
 import React from 'react'
 import styled from 'styled-components'
 import posed, { PoseGroup } from 'react-pose'
@@ -7,7 +13,12 @@ import throttle from 'lodash/throttle'
 import { NLP } from 'components/nlp'
 import { Blinker } from 'components/Blinker'
 
-// posed components
+/**
+ * PosedTerminalText
+ * 
+ * This component is used to render the messages that appear on-load.
+ * It delays each new message by 1 second for each component before it.
+ */
 
 const PosedTerminalText = posed.li({
     enter: {
@@ -24,6 +35,13 @@ const PosedTerminalText = posed.li({
         }
     }
 })
+
+/**
+ * StyledTerminal
+ * 
+ * CSS for the terminal, which is really just a <ul> element 
+ * with some padding and a customized scrollbar.
+ */
 
 const StyledTerminal = styled.ul`
 
@@ -51,6 +69,13 @@ const StyledTerminal = styled.ul`
     }
 
 `
+
+/**
+ * StyledTerminalText
+ * 
+ * CSS for rendering each line in the terminal.
+ * Prepends user input with a foward-arrow.
+ */
 
 const StyledTerminalText = styled(PosedTerminalText)`
 
@@ -89,11 +114,21 @@ export class Terminal extends React.Component {
     constructor(props) {
 
         super(props)
+
         this.state = {
+
+            // user input
             terminalInput: '',
-            terminalHistoryIndex: 0,
+
+            // array of strings that have been rendered
+            terminalOut: [],
+
+            // array of user inputs
             terminalHistory: [],
-            terminalOut: []
+
+            // tracks how far into the input history a user is
+            terminalHistoryIndex: 0
+
         }
 
         this.onTerminalKeyDown = throttle(this._onTerminalKeyDown, 200, { trailing: false })
@@ -171,16 +206,22 @@ export class Terminal extends React.Component {
 
         if (event.key === 'Enter' && this.state.terminalInput.length > 0) {
 
+            let input = this.state.terminalInput
+
+            // update our State and reset the terminalInput string
             this.setState({
                 terminalOut:            [...this.state.terminalOut, this.buildInput(this.state.terminalInput)], // stack out
                 terminalHistory:        [...this.state.terminalHistory, this.state.terminalInput], // stack history
                 terminalHistoryIndex:   this.state.terminalHistory.length + 1,
                 terminalInput:          ''
             }, () => {
+
+                // after State has been updated, push the scrollbar to the bottom
                 this.pinTerminalScrollbar()
+
             })
 
-            this.processCommand(this.state.terminalInput)
+            this.processCommand(input)
 
         } else if (event.key === 'ArrowUp') {
 

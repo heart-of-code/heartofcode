@@ -1,18 +1,15 @@
-/* ========================================================
 
-    gatsby-node
-
-======================================================== */
+/**
+ * gatsby-node.js
+ * 
+ * Implement Gatsby's Node APIs in this file.
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
 
 const path = require('path')
 
-/* ========================================================
-    onCreateWebpackConfig
-
-    modify the webpack config
-======================================================== */
-
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+
     actions.setWebpackConfig({
         resolve: {
             alias: {
@@ -53,4 +50,5 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
             }
         })
     }
+
 }

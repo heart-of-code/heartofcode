@@ -1,4 +1,10 @@
 
+/**
+ * get-key.js
+ * 
+ * Helper utility for getting key input.
+ */
+
 export function getKey(event) {
 
     if (event.key !== undefined) {

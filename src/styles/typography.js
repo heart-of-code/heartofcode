@@ -1,4 +1,14 @@
+
+/**
+ * typography.js
+ * 
+ * These are re-usable styled-components that can be imported and dropped into amother
+ * styled-component anywhere in the application. 
+ */
+
 import { css } from 'styled-components'
+
+// fonts
 
 export const HeaderFont = css`
     font-family:    'Leelawadee UI', sans-serif;
@@ -9,6 +19,8 @@ export const BodyFont = css`
     font-family:    'Lato', sans-serif;
     font-weight:    normal;
 `
+
+// body and heading styles
 
 export const Body = css`
     ${BodyFont}

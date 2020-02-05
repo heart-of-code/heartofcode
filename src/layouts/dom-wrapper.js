@@ -1,11 +1,17 @@
 
-// external
+/**
+ * dom-wrapper.js
+ * 
+ * This component wraps the website and persists through page changes.
+ */
+
+
 
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
-// internal
+
 
 import { Header } from 'modules/header'
 import { Footer } from 'modules/footer'

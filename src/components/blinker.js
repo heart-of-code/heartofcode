@@ -1,4 +1,10 @@
 
+/**
+ * blinker.js
+ * 
+ * Blinking text input bar.
+ */
+
 import React from 'react'
 import styled from 'styled-components'
 import posed from 'react-pose'

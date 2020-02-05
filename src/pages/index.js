@@ -1,11 +1,7 @@
 
-/* ========================================================
-
-    INDEX
-
-======================================================== */
-
-// Libs
+/**
+ * index.js
+ */
 
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -25,6 +21,8 @@ const Index = () => (
         <Helmet title='Home :: Heart of Code' />
 
         <Terminal>
+            {/* These are the default messages.
+            After these have rendered, the user will be asked for input. */}
             {`HELLO WORLD`}
             {`I'm Matt.`}
             {`I bike, play Dungeons & Dragons, and develop software`}
