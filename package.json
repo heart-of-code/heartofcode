@@ -19,7 +19,7 @@
     "afinn-165": "^1.0.4",
     "bezier-easing": "^2.1.0",
     "decache": "^4.5.1",
-    "gatsby": "^2.19.12",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-styled-components": "^3.1.19",
     "graphql": "^14.6.0",
